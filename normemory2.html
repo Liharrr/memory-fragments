@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>记忆碎片编号 #002</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+/* 设置整体背景为陈旧纸张质感 */
+body {
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  color: #513f05;
+  padding: 2rem;
+  background-image: url("images/StockCake-Ancient parchment design_1753810001.jpg"); /* 添加你自己的陈旧背景图 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* 烧焦边缘效果覆盖图 */
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-image: url('images/burned-edges.png'); /* 烧焦边缘图片 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 标题样式 */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #2a4d69;
+  z-index: 2;
+  position: relative;
+}
+
+/* 记忆卡片样式 */
+.memory-card {
+  background-color: rgba(255, 248, 230, 0.95); /* 与背景不同，略浅偏黄 */
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  z-index: 2;
+  position: relative;
+  backdrop-filter: blur(1px);
+}
+
+/* 元信息样式 */
+.metadata {
+  margin-top: -1em;
+  font-size: 0.9em;
+  color: #3b0303;
+  z-index: 2;
+  position: relative;
+}
+</style>
+<body>
+  <div class="overlay"></div>
+
+  <h1>《沙漏下的实验》</h1>
+
+  <div class="memory-card">
+    <p>青年时期的 Chronarch 拥有一间凌乱到堆满羊皮纸和沙漏的工作室。
+别人眼里，那里就是一间杂物间；他眼里，那是“时间的剖面实验室”。</p>
+
+  <p>他有个奇怪的习惯：
+每晚固定在月上中天时，用同一只旧沙漏记录一段记忆的流逝过程。
+——不是用纸写下，而是用细到不可见的银丝刻在琥珀里。</p>
+
+  <p>朋友笑他：“你到底想干嘛？就算记录下来了，别人也看不懂啊。”
+Chronarch 只是淡淡回答：“不是别人要看懂，是我自己要记得——完整地记得。”</p>
+
+  <p>有一次，他甚至为了验证“记忆是否会在时间停顿中变质”，整整三天没睡，守在一个快要消逝的幻象旁，眼睛通红，嘴里还在低声背诵着当时的场景细节。
+有人劝他别太拼命，他反问：“如果连我都不愿意守住它，那它就真的没了。”</p>
+
+<p>那时，他还没有黑花，没有权杖，也没有“记忆看守者”的名号。
+只是个固执、安静，却愿意为一段记忆耗尽心力的年轻人。</p>
+
+  </div>
+
+  <div class="metadata">
+    <p>编号：NOR-FRAG-02</p>
+  
+  </div>
+</body>

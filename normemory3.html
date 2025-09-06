@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>记忆碎片编号 #003</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<style>
+/* 设置整体背景为陈旧纸张质感 */
+body {
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  color: #513f05;
+  padding: 2rem;
+  background-image: url("images/StockCake-Ancient parchment design_1753810001.jpg"); /* 添加你自己的陈旧背景图 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* 烧焦边缘效果覆盖图 */
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-image: url('images/burned-edges.png'); /* 烧焦边缘图片 */
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* 标题样式 */
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #2a4d69;
+  z-index: 2;
+  position: relative;
+}
+
+/* 记忆卡片样式 */
+.memory-card {
+  background-color: rgba(255, 248, 230, 0.95); /* 与背景不同，略浅偏黄 */
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  z-index: 2;
+  position: relative;
+  backdrop-filter: blur(1px);
+}
+
+/* 元信息样式 */
+.metadata {
+  margin-top: -1em;
+  font-size: 0.9em;
+  color: #3b0303;
+  z-index: 2;
+  position: relative;
+}
+</style>
+<body>
+  <div class="overlay"></div>
+
+  <h1>《我是第一个时间币使用者》</h1>
+
+  <div class="memory-card">
+    <p>每个夜晚，我都很喜欢呆在海边独子一人遥望大海。
+无论什么时候，不管什么心情，风雨无阻，我都会准时准点到海边。
+这片海藏着我不知道的秘密，偶尔会发出阵阵蓝光。
+我不晓得，但我感觉大海正在和我倾诉着什么，因为我感受到了很复杂的情绪波动。
+</p>
+
+  <p>我当然好奇过，他娓娓道来：“那些是人们视若珍宝的记忆流，但也是他们触不可及也无法还原的记忆。”</p>
+
+  <p>我恍然大悟，他却问道：“你有没有想要保存的记忆？”</p>
+
+  <p>我仔细回想，告诉他我想保存下我对这片海的记忆。</p>
+
+<p>他说道：“好，我帮你。”</p>
+
+  </div>
+
+  <div class="metadata">
+    <p>编号：NOR-FRAG-03</p>
+  
+  </div>
+</body>
