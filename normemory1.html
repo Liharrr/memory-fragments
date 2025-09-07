@@ -2,7 +2,7 @@
 <html lang="zh-Hans">
 <head>
   <meta charset="UTF-8">
-  <title>记忆碎片编号 #001</title>
+  <title>记忆碎片编号 #003</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
 /* 设置整体背景为陈旧纸张质感 */
@@ -13,11 +13,12 @@ body {
   font-size: 18px;
   color: #513f05;
   padding: 2rem;
-  background-image: url("images/StockCake-Ancient parchment design_1753810001.jpg"); /* 添加你自己的陈旧背景图 */
+  background-image: url("images/StockCake-Ancient parchment design_1753810001.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  margin: 0;
 }
 
 /* 烧焦边缘效果覆盖图 */
@@ -25,7 +26,7 @@ body {
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  background-image: url('images/burned-edges.png'); /* 烧焦边缘图片 */
+  background-image: url('images/burned-edges.png');
   background-size: cover;
   background-repeat: no-repeat;
   pointer-events: none;
@@ -39,13 +40,15 @@ h1 {
   color: #2a4d69;
   z-index: 2;
   position: relative;
+  margin-bottom: 1rem;
+  margin-top: 20%;
 }
 
 /* 记忆卡片样式 */
 .memory-card {
-  background-color: rgba(255, 248, 230, 0.95); /* 与背景不同，略浅偏黄 */
+  background-color: rgba(255, 248, 230, 0.95);
   padding: 20px;
-  margin: 30px auto;
+  margin: 20px auto;
   max-width: 600px;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
@@ -56,13 +59,39 @@ h1 {
 
 /* 元信息样式 */
 .metadata {
-  margin-top: -1em;
+  text-align: center;
   font-size: 0.9em;
   color: #3b0303;
+  margin-top: 10px;
   z-index: 2;
   position: relative;
 }
+
+/* 🔹 响应式调整 (针对手机) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 1rem;
+    background-attachment: scroll; /* 修复移动端背景固定卡顿 */
+  }
+
+  h1 {
+    font-size: 1.5em;
+    padding: 0 0.5rem;
+  }
+
+  .memory-card {
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 95%; /* 让卡片贴合手机屏幕 */
+  }
+
+  .metadata {
+    font-size: 0.85em;
+  }
+}
 </style>
+
 <body>
   <div class="overlay"></div>
 
